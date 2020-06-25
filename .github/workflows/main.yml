@@ -22,6 +22,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
+
 - name: OWASP ZAP Full Scan
   uses: zaproxy/action-full-scan@v0.1.0
   with:
