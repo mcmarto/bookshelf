@@ -1,3 +1,5 @@
+![Java CI with Maven](https://github.com/mcmarto/bookshelf/workflows/Java%20CI%20with%20Maven/badge.svg) 
+
 # Bookshelf
 Sample project to help with learning Spring Boot.
 
