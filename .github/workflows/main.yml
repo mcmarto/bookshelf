@@ -22,18 +22,23 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-- name: OWASP ZAP Baseline Scan
-  uses: zaproxy/action-baseline@v0.3.0
-  with:
-    # GitHub Token to create issues in the repository
-    token: # optional, default is ${{ github.token }}
-    # Target URL
-    target: 
-    # Relative path of the ZAP configuration file
-    rules_file_name: # optional
-    # The Docker file to be executed
-    docker_name: # default is owasp/zap2docker-stable
-    # Additional command line options
-    cmd_options: # optional
-    # The title for the GitHub issue to be created
-    issue_title: # optional, default is ZAP Scan Baseline Report
+    - name: OWASP ZAP Baseline Scan
+      uses: zaproxy/action-baseline@v0.3.0
+        with:
+          # GitHub Token to create issues in the repository
+          token: # optional, default is ${{ github.token }}
+    
+          # Target URL
+          target: 
+    
+          # Relative path of the ZAP configuration file
+          rules_file_name: # optional
+    
+          # The Docker file to be executed
+          docker_name: # default is owasp/zap2docker-stable
+    
+          # Additional command line options
+          cmd_options: # optional
+          
+          # The title for the GitHub issue to be created
+          issue_title: # optional, default is ZAP Scan Baseline Report
